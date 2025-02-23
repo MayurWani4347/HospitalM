@@ -1,0 +1,9 @@
+<h2>Admin Dashboard</h2>
+<form (ngSubmit)="addHospital()">
+  <input [(ngModel)]="name" name="name" placeholder="Hospital Name" required />
+  <input [(ngModel)]="location" name="location" placeholder="Location" required />
+  <button type="submit">Add Hospital</button>
+</form>
+<ul>
+  <li *ngFor="let hospital of hospitals">{{ hospital.name }} - {{ hospital.location }}</li>
+</ul>

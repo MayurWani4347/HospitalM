@@ -1,0 +1,8 @@
+<form (ngSubmit)="createPrescription()">
+    <input [(ngModel)]="doctorName" name="doctorName" placeholder="Doctor Name" required />
+    <input [(ngModel)]="diagnosis" name="diagnosis" placeholder="Diagnosis" required />
+    <textarea [(ngModel)]="medicineDetails" name="medicineDetails" placeholder="Medicine Details" required></textarea>
+    <input type="date" [(ngModel)]="prescriptionDate" name="prescriptionDate" required />
+    <button type="submit">Submit</button>
+  </form>
+  
